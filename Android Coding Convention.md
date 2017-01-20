@@ -70,10 +70,10 @@ Keep method small, and focused.
 ## Define fields
 Define fields either at the top of the file or immediately before the methods that use them.
 ## Naming convention
-*	Public static final field (constants) are ALL_CAP_WITH_UNDERSOCRES.
-* Non-public, non-static field name start with m.
-*	Static field name start with s.
-*	Other fields start with a lower case letter.
+*	Public static final field (constants) are `ALL_CAP_WITH_UNDERSOCRES`.
+* Non-public, non-static field name start with `m`.
+*	Static field name start with `s`.
+*	Other fields start with `a lower case letter`.
 ```
 public class MyClass {
   public static final int SOME_CONSTANT = 42;
