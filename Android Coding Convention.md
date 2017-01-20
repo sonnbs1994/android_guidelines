@@ -77,7 +77,7 @@ Define fields either at the top of the file or immediately before the methods th
 ```
 public class MyClass {
   public static final int SOME_CONSTANT = 42;
-  public int public publicField;
+  public int publicField;
   private static MyClass sSingleton;
   int mPrivateField;
   protected int mProtectedField;
@@ -116,7 +116,7 @@ class MyClass {
 }
 ```
 Exception: If the entire conditional fit on one line, you may (but are not obligated to) put it all on one line. Example: <br />
-You can use:
+You should use:
 
 ```
 if (condition) {
@@ -185,15 +185,15 @@ When an XML element doesn’t have any content, you must use self closing tab:
 ### Resource naming
 __*Id naming*__: Ids should be prefixed with the name of the element in lowercase_underscore.
  
-| Element | Prefix |
-|---------|--------|
-| TextView | text_ |
-| Button | button_ |
-| ImageView | image_ |
-| Menu | menu_ |
-| EditText | edit_ |
-| LinearLayout, FrameLayout... | layout_ |
-| ListView | list_ |
+| Element | Prefix | Example |
+|---------|--------|---------|
+| TextView | text_ | text_user_name |
+| Button | button_ | button_save|
+| ImageView | image_ |image_user_picture|
+| Menu | menu_ | menu_setting|
+| EditText | edit_ |edit_user_email|
+| LinearLayout, FrameLayout... | layout_ | layout_user_info|
+| ListView | list_ | list_user|
  
 __*Strings*__:
   * String name start with a prefix that identifies the section they belong to. <br />
@@ -204,4 +204,5 @@ __*Strings*__:
   |------|-----------|
   | error| An error message|
   | msg_ | A regular information message |
- 
+  
+  * restrict use the same string for different views. 
