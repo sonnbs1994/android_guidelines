@@ -92,6 +92,12 @@ When using one of these components, you must define the keys as a static final f
 |Bundle | BUNDLE_ |
 |Argument| ARGS_ |
 
+When data type of variables is a View components, they should be suffixed with their data type.
+
+```
+  private TextView mUserNameTextView;
+  public Button mDeleteButton;
+```
 ## Treat acronyms as word
 Treat Acronyms and abbreviations as words in naming variables, methods and classes to make names more readable:
 
